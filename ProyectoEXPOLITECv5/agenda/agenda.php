@@ -3,7 +3,7 @@
 $server = "localhost";
 $usuarios = "root";
 $contraseña = "";
-$db = "agendaexpo";
+$db = "agendados";
 
 $comprobacion = mysqli_connect($server, $usuarios, $contraseña, $db);
 if ($comprobacion->connect_error) {
@@ -23,5 +23,8 @@ if (isset($_POST['informacion'])) {
     if($ejecutar){
         echo 'si se registro';
     }
+    else {
+        echo 'Perame que no esta jalando';
+    }
 }
-?>
+?> 
