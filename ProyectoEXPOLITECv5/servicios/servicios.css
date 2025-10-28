@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /* Añade esto */
+}
+
+/* Añade esto al HTML: <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Añade esto para prevenir scroll horizontal */
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(63, 89, 55, 0.555);
+    /* Elimina float: left */
+    display: block; /* Cambia a block */
+    backdrop-filter: blur(10px);
+}
+
+#marca{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: rgb(107, 107, 107);
+}
+
+nav{
+    width: 75%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 26px;
+    background: linear-gradient(to bottom, rgba(73, 84, 88, 0.532), rgb(23, 23, 23));
+    backdrop-filter: blur(100px);
+}
+
+nav ul{
+    list-style: none;
+    margin-right: 2%;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    margin-right: 8%;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: cadetblue;
+    transform: translateY(-4%);
+    transition: 0.2s;
+}
+
+.submenu{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    width: 117%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+main{
+    width: 100%;
+    height: 85%;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 400px;
+    width: 30%;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgb(44, 44, 44);
+    float: left;
+
+}
+
+button:hover{
+    transform: translateY(-4%);
+    background: linear-gradient(rgba(128, 128, 128, 0.694), rgba(91, 91, 97, 0.566));
+    transition:.2s;
+    backdrop-filter: blur(10px);
+}   
+
+p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.botonesimg{
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin: 0% auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Añade esto */
+}
+
+.botonesimg:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+/* Añade un clearfix para contener los floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#presentacion{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+}
+
+#presentaciondiv{
+    height: 22%;
+    width: 80%;
+    margin-top: 10%;
+    margin: 0% auto;
+    padding: 10px;
+    background: rgba(50, 47, 47, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+}

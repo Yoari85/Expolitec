@@ -1,0 +1,183 @@
+/* No me modifiquen este a menos que sean los input del aside */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    background-color: rgb(93, 215, 175);
+}
+header{
+    width: 100%;
+    height: 15%;
+    float: left;
+    background: linear-gradient(to right, darkblue, lightblue);
+}
+#marca{
+    width: 100%;
+    height: 70%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+    background-color: rgb(0, 0, 10);
+}
+nav{
+    width: 100%;
+    height: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background: linear-gradient(to right, darkblue, lig);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(160, 95, 158);
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+/* Hablo en serio */
+main{
+    width: 80%;
+    height: 95%;
+    float: left;
+    color: white;
+    background: linear-gradient(to bottom, black, gray);
+}
+#subtitulo{
+    width: 100%;
+    height: 15%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 26px;
+}
+hr{
+    width: 95%;
+    margin-top: 10px;
+    border: 2px solid white;
+}
+#calendario{
+    width: 100%;
+    height: 85%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+/* De verdad */
+table{
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 80%;
+    height: 90%;
+}
+td{
+    border: 3px solid #ffffff;
+    height: 10%;
+    width: 10%;
+    font-family: arial;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+#month{
+    border: 3px solid #ffffff;
+    height: 6%;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+/* Netaaa eh */
+.days{
+    border: 3px solid #ffffff;
+    height: 4%;
+    width: 10%;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+aside{
+    width: 20%;
+    height: 95%;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    
+}
+form{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+#formu{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.formulario{
+    width: 60%;
+    height: 3%;
+    border-color: white;
+    color: white;
+    background-color: rgba(255, 254, 254, 0.165);
+    border-style:groove;
+    text-align: center;
+}
+select{
+    width: 60%;
+    height: 3%;
+    border-color: white;
+    color: white;
+    border-style:groove;
+    background-color:rgba(255, 254, 254, 0.165);
+}
+select option{
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+button{
+    width: 40%;
+    height: 4%;
+    border-color: white;
+    color: white;
+    border-style:groove;
+    background-color: rgba(4, 15, 49, 0.401);
+    transition: 0.3s;
+}
+button:hover{
+    transform: translateY(-10%);
+    transform: scale(1.4);
+}
+p{
+    color: white;
+    font-size: 18px;
+}
+footer{
+    width: 100%;
+    height: 15%;
+    float: left;
+    background-color: rgb(132, 176, 234);
+}
+/*Datos de contacto*/
+pre{
+    font-size: large ;
+}
+/* Gracias por leer */

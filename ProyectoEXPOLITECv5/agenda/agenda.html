@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title> 
+    <link rel="stylesheet" href="agenda.css"> 
+    <script src="agendas.js"></script>
+    <script src="conexion.php"></script>
+</head>
+<body>
+<!-- Header de navegación -->
+    <header>
+        <section id="marca">
+            <h1>Agenda</h1>
+        </section>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="hagaloUsted.html">Hágalo Usted</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+        </nav>
+    </header>
+<!-- Contenido principal -->
+    <main>
+    <!-- Subtítulo de la página -->
+        <section id="subtitulo">
+        <h1>Espacios de este mes</h1>
+        <hr>
+        </section>
+    <!-- Sección del calendario -->    
+        <section id="calendario">
+        <table>
+            <!-- Mes seleccionado de la agenda -->
+            <tr>
+                <td id="month" colspan="7">Noviembre</td>
+                
+            </tr>
+            <!-- Días de la semana -->
+            <tr>
+                <td class="days">Domingo</td>
+                <td class="days">Lunes</td>
+                <td class="days">Martes</td>
+                <td class="days">Miércoles</td>
+                <td class="days">Jueves</td>
+                <td class="days">Viernes</td>
+                <td class="days">Sábado</td>
+            </tr>
+            <!-- Días ennumerados del mes (si se cambia el mes hay que modificar la tabla y por ende funciones JS) -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="d1">1</td>
+            </tr>
+
+            <tr>
+                <td id="d2">2</td>
+                <td id="d3">3</td>
+                <td id="d4">4</td>
+                <td id="d5">5</td>
+                <td id="d6">6</td>
+                <td id="d7">7</td>
+                <td id="d8">8</td>
+            </tr>
+
+            <tr>
+                <td id="d9">9</td>
+                <td id="d10">10</td>
+                <td id="d11">11</td>
+                <td id="d12">12</td>
+                <td id="d13">13</td>
+                <td id="d14">14</td>
+                <td id="d15">15</td>
+            </tr>
+
+            <tr>
+                <td id="d16">16</td>
+                <td id="d17">17</td>
+                <td id="d18">18</td>
+                <td id="d19">19</td>
+                <td id="d20">20</td>
+                <td id="d21">21</td>
+                <td id="d22">22</td>
+            </tr>
+
+            <tr>
+                <td id="d23">23</td>
+                <td id="d24">24</td>
+                <td id="d25">25</td>
+                <td id="d26">26</td>
+                <td id="d27">27</td>
+                <td id="d28">28</td>
+                <td id="d29">29</td>
+            </tr>
+
+            <tr>
+                <td id="d30">30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+        </section>
+    </main>
+
+    <aside>
+        <form action="agenda.php" method="post">
+        <h2 id="formu">Formulario de agenda</h2>
+<!-- Pequeño posible formulario sobre datos del cliente -->
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" class="formulario" type="text">
+        <br>
+        <label for="nombre">Correo:</label>
+        <input name="email" class="formulario" type="email">
+        <br>
+        <label for="nombre">Número de contacto:</label>
+        <input name="numero" class="formulario" type="tel" placeholder="00-00-00-00-00">
+        <br>
+        <label for="nombre">Servicio a contratar:</label>
+        <select name="services" id="srv">
+            <option></option>
+            <option value="uno">Mantenimiento preventivo</option>
+            <option value="dos">Mantenimiento correctivo</option>
+            <option value="tres">Mantenimiento predictivo</option>
+            <option value="cuatro">Asesorías</option>
+        </select>
+        <br>
+<!-- Aquí se define el selector del día a agendar -->
+        <label for="opciones">Dia que desea agendar:</label>
+        <select name="opciones" id="selecciona">
+                <option></option>
+<!-- Cada opción tiene un valor asigando usado para su respectivo "case" en JS -->
+                <option class="op" value="dia1">Día 1</option>
+                <option class="op" value="dia2">Día 2</option>
+                <option class="op" value="dia3">Día 3</option>
+                <option class="op" value="dia4">Día 4</option>
+                <option class="op" value="dia5">Día 5</option>
+                <option class="op" value="dia6">Día 6</option>
+                <option class="op" value="dia7">Día 7</option>
+                <option class="op" value="dia8">Día 8</option>
+                <option class="op" value="dia9">Día 9</option>
+                <option class="op" value="dia10">Día 10</option>
+
+                <option value="dia11">Día 11</option>
+                <option value="dia12">Día 12</option>
+                <option value="dia13">Día 13</option>
+                <option value="dia14">Día 14</option>
+                <option value="dia15">Día 15</option>
+                <option value="dia16">Día 16</option>
+                <option value="dia17">Día 17</option>
+                <option value="dia18">Día 18</option>
+                <option value="dia19">Día 19</option>
+                <option value="dia20">Día 20</option>
+
+                <option value="dia21">Día 21</option>
+                <option value="dia22">Día 22</option>
+                <option value="dia23">Día 23</option>
+                <option value="dia24">Día 24</option>
+                <option value="dia25">Día 25</option>
+                <option value="dia26">Día 26</option>
+                <option value="dia27">Día 27</option>
+                <option value="dia28">Día 28</option>
+                <option value="dia29">Día 29</option>
+                <option value="dia30">Día 30</option>
+        </select>
+        <br>
+<!-- Definimos botón para agendar con la función "agendar()" del JS -->
+        <button type="button" onclick="agendar()">Agendar</button>
+        <br>
+        </form>
+<!-- Aquí está nuestro párrafo invisible que solo aparece como mensaje de error -->
+        <p id="error"></p>
+    </aside>
+
+    <footer>
+        <pre>
+            Contactos:
+            Daniel N. 33-26-43-71-19
+            Ethan D. 33 
+            Yoari F. 33
+            Angel G. 33
+            José M. 33
+        </pre>
+    </footer>
+<!-- VIVA CRISTO REEEEEY -->
+</body>
+</html>
